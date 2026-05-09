@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Hub</title>
+    <meta
+      name="description"
+      content="Growth dashboards across GitHub Pages, Google Cloud Run, and Render."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Antigravity Dashboard Hub</p>
+        <h1>Connected dashboards, one front door.</h1>
+        <p class="hero-copy">
+          GitHub Actions, Google Cloud Run, Render에 흩어진 대시보드를
+          한곳에서 빠르게 열고 관리할 수 있도록 정리한 허브입니다.
+        </p>
+        <div class="hero-meta">
+          <div>
+            <span class="meta-label">Total</span>
+            <strong id="dashboard-count">0</strong>
+          </div>
+          <div>
+            <span class="meta-label">Platforms</span>
+            <strong>3</strong>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section-header">
+          <div>
+            <p class="section-kicker">Directory</p>
+            <h2>배포 환경별로 보기</h2>
+          </div>
+          <p class="section-copy">
+            기존 대시보드의 배포 방식은 유지하고, 허브는 링크와 설명만
+            담당합니다.
+          </p>
+        </section>
+
+        <div id="platform-groups" class="platform-groups" aria-live="polite"></div>
+      </main>
+    </div>
+
+    <template id="platform-template">
+      <section class="platform-section">
+        <div class="platform-heading">
+          <div>
+            <p class="platform-name"></p>
+            <h3 class="platform-title"></h3>
+          </div>
+          <span class="platform-count"></span>
+        </div>
+        <div class="dashboard-grid"></div>
+      </section>
+    </template>
+
+    <template id="card-template">
+      <article class="dashboard-card">
+        <div class="card-top">
+          <span class="dashboard-type"></span>
+          <h4 class="dashboard-title"></h4>
+        </div>
+        <p class="dashboard-description"></p>
+        <div class="card-bottom">
+          <a class="dashboard-link" target="_blank" rel="noreferrer noopener">
+            Open dashboard
+          </a>
+          <span class="dashboard-host"></span>
+        </div>
+      </article>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
