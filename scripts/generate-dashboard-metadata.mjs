@@ -246,8 +246,8 @@ function resolveMarketingMessageDashboard() {
   return {
     latestDate: null,
     latestLabel: "최신 데이터는 접근 후 확인",
-    status: "접근 제한",
-    updateSource: "Vercel 보호",
+    status: "프로모션 일정",
+    updateSource: "상시 업데이트",
   };
 }
 
