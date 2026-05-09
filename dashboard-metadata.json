@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T08:45:59.382Z",
+  "generatedAt": "2026-05-09T09:08:31.903Z",
   "dashboards": {
     "meta-ads-overview": {
       "latestDate": "2026-05-09",
@@ -30,6 +30,12 @@
       "latestLabel": "접속 시 실시간 반영",
       "status": "로그인 필요",
       "updateSource": "실시간 데이터"
+    },
+    "marketing-message-dashboard": {
+      "latestDate": null,
+      "latestLabel": "최신 데이터는 접근 후 확인",
+      "status": "접근 제한",
+      "updateSource": "Vercel 보호"
     }
   }
 }

@@ -242,6 +242,15 @@ function resolveCafe24Dashboard() {
   };
 }
 
+function resolveMarketingMessageDashboard() {
+  return {
+    latestDate: null,
+    latestLabel: "최신 데이터는 접근 후 확인",
+    status: "접근 제한",
+    updateSource: "Vercel 보호",
+  };
+}
+
 async function generateDashboardMetadata() {
   const dashboards = {
     "meta-ads-overview": await resolveMetaAdsOverview(),
@@ -249,6 +258,7 @@ async function generateDashboardMetadata() {
     "ga4-funnel": await resolveGa4Funnel(),
     "meta-ads-creative": await resolveMetaCreative(),
     "cafe24-dashboard": resolveCafe24Dashboard(),
+    "marketing-message-dashboard": resolveMarketingMessageDashboard(),
   };
 
   const payload = {

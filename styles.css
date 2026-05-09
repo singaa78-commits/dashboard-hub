@@ -259,7 +259,21 @@ body {
 }
 
 .dashboard-card[data-tone="navy"] {
+  background: #ffffff;
+}
+
+.dashboard-card[data-tone="navy"] .card-surface {
   background: var(--block-navy);
+  color: var(--canvas);
+}
+
+.dashboard-card[data-tone="navy"] .dashboard-date {
+  color: var(--ink);
+}
+
+.dashboard-card[data-tone="navy"] .dashboard-chip {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--canvas);
 }
 

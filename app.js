@@ -54,6 +54,17 @@ const dashboards = [
     url: "https://cafe24-growth-dashboard.onrender.com/auth/login",
     tone: "coral",
   },
+  {
+    id: "marketing-message-dashboard",
+    name: "마케팅 메시지 성과 대시보드",
+    badge: "MESSAGE ADS",
+    description: "대시보드 열기",
+    fallbackStatus: "접근 제한",
+    fallbackUpdateLabel: "최신 데이터는 접근 후 확인",
+    fallbackUpdateSource: "Vercel 보호",
+    url: "https://meta-ads-daily-git-main-singaa78-commits-projects.vercel.app/dashboard.html",
+    tone: "navy",
+  },
 ];
 
 const dashboardList = document.querySelector("#dashboard-list");
@@ -66,7 +77,11 @@ const todayLabel = new Intl.DateTimeFormat("en-GB", {
 }).format(now);
 
 function getStatusClass(status) {
-  if (status.includes("로그인")) {
+  if (
+    status.includes("로그인") ||
+    status.includes("제한") ||
+    status.includes("권한")
+  ) {
     return "restricted";
   }
 
