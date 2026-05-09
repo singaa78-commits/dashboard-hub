@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-09T08:45:59.382Z",
+  "dashboards": {
+    "meta-ads-overview": {
+      "latestDate": "2026-05-09",
+      "latestLabel": "최신 데이터 2026.05.09",
+      "status": "운영중",
+      "updateSource": "실데이터 기준"
+    },
+    "instagram-insights": {
+      "latestDate": "2026-05-08",
+      "latestLabel": "최신 데이터 2026.05.08",
+      "status": "운영중",
+      "updateSource": "실데이터 기준"
+    },
+    "ga4-funnel": {
+      "latestDate": "2026-05-08",
+      "latestLabel": "최신 데이터 2026.05.08",
+      "status": "운영중",
+      "updateSource": "실데이터 기준"
+    },
+    "meta-ads-creative": {
+      "latestDate": "2026-05-08",
+      "latestLabel": "최신 데이터 2026.05.08",
+      "status": "운영중",
+      "updateSource": "실데이터 기준"
+    },
+    "cafe24-dashboard": {
+      "latestDate": null,
+      "latestLabel": "접속 시 실시간 반영",
+      "status": "로그인 필요",
+      "updateSource": "실시간 데이터"
+    }
+  }
+}
